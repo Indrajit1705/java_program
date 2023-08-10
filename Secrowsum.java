@@ -1,11 +1,11 @@
 public class Secrowsum {
     public static int secondrowsum(int nums[][]){
         int sum = 0;
-        if(nums.length >= 2){
-            for (int j = 0; j < nums[1].length; j++) {
+        
+            for (int j = 0; j < nums[0].length; j++) {
                 sum += nums[1][j];
             }
-        }
+        
        
         return sum;
     }
