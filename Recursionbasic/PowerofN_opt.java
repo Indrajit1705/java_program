@@ -5,9 +5,10 @@ public class PowerofN_opt {
         if(n == 0){
             return 1;
         }
-        int halfPowerSq =  optimizedpower(a, n/2) * optimizedpower(a, n/2);
+        int halfpower = optimizedpower(a, n/2);
+        int halfPowerSq =  halfpower * halfpower;
 
-        //n is odd
+        //n is odd                                                          // T.C = O(logn)
         if(n % 2 != 0){
             halfPowerSq = a * halfPowerSq;
         }
